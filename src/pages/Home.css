@@ -1,0 +1,65 @@
+
+.titles{
+   
+    margin-top: 250px;
+    margin-left: 200px;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+
+
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,6550.1%,80%,90.1%,92%
+    {
+        color:#0e3742;
+        text-shadow: none;
+     
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+        
+    }
+}
+.citation{
+    margin-top: 70px;
+    margin-left: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    color: #0e3742;
+    -webkit-text-stroke: 0.3vw #223035;
+
+}
+.citation::before{
+    content: attr(data-text);
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    color:#03bcf4;
+    -webkit-text-stroke: 0vw #223035;
+    border-right: 2px solid #03bcf4;
+    overflow: hidden;
+    animation: animates 6s linear infinite;
+}
+@keyframes animates{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+     width: 100%;   
+    }
+}

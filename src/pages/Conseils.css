@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c1022;
+
+}
+.box2{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box2::after{
+    content:'';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animating 4s linear infinite;
+    animation-delay: -2s;
+}
+.box2::before{
+    content:'';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animating 4s linear infinite;
+}
+@keyframes animating{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box2 span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background:#0c1022;
+    z-index: 1;
+}
+.box2 h2{
+    position: relative;
+    margin-left: 50px;
+    z-index: 2;
+    color: #fff;
+    font-family: fantasy;
+    font-weight: bold;
+    letter-spacing: 9;
+    font-size: 3em;
+}
+.box2 h1{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 300px;
+    z-index: 2;
+    color: #fff;
+    font-family: fantasy;
+    font-weight: bold;
+    letter-spacing: 9;
+    font-size: 3em;
+}
+
+.btn{
+    border: none;
+    position:absolute;
+    margin-top: 50px;
+    margin-left: 400px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn:hover{
+
+color: #255784;
+background: #2196f3;
+box-shadow:0 0 10px #2196f3,0 0 40px #2196f3, 0 0 80px #2196f3;
+transition-delay: 0.2s;
+}
+
