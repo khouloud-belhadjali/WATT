@@ -1,7 +1,8 @@
 import{Pie} from "react-chartjs-2";
 import React ,{useState}from "react";
-import{UserData} from '../pages/Data'
-function PieChart({charData}){
+import{UserData} from '../pages/Data';
+import { Chart as ChartJS } from "chart.js/auto";
+function PieChart(){
     const [userData,setUserData] = useState(
 		{
 			labels: UserData.map((data)=> data.jour),

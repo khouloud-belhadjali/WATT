@@ -1,6 +1,7 @@
 import{Bar} from "react-chartjs-2";
 import React, {useState} from "react";
-import{UserData} from '../pages/Data'
+import{UserData} from '../pages/Data';
+import { Chart as ChartJS } from "chart.js/auto";
 function BarChart(){
     const [userData,setUserData] = useState(
 		{
