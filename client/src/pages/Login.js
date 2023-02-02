@@ -42,7 +42,7 @@ function Login() {
                     <div className='remember'>
                         <label for=''><input type='checkbox'/>Remember me</label>
                     </div>
-                    <button type='submit' onClick={login}>Login</button>
+                    <button className='btn-log' type='submit' onClick={login}>Login</button>
                     <div className='signUp-link'>
                         <h1 className='remarque'>{loginStatus}</h1>
                         <p>Don't have an account?<NavLink to='/Register' className='signUpBtn-link'>Sign Up</NavLink></p>

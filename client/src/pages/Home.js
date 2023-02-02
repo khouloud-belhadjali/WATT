@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Navbar from "../components/Navbar"
+
 import './Home.css';
 
 function Home() {

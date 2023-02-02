@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@font-face {
+	font-family: digital;
+	src: url('./fonts/Digital\ Dismay.otf');
+}
+
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -225,4 +230,23 @@ i {
 }
 .remarque{
 	font-size: 2em;
+}
+.btn-compteur{
+	position: absolute;
+	margin-top: 520px;
+	margin-left: -145px;
+	width: 70px;
+    height: 70px;
+    background:rgba(221, 17, 17, 0.468);
+	border: rgb(10, 2, 2);
+    cursor: pointer;
+    border-radius: 50px;
+ 
+}
+.val-compteur{
+	
+	margin-top: -490px;
+	margin-left: 150px;
+	font-size: 90px;
+	font-family: digital;
 }

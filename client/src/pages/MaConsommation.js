@@ -5,8 +5,35 @@ import LineChart from '../components/LineChart';
 import PieChart from '../components/PieChart';
 import{UserData} from './Data'
 import myGif from '../assets/light-logo.gif' ;
+import compteur from '../assets/compteur.png';
+import emailjs from '@emailjs/browser'
+
 const MaConsommation = () => {
 	
+	const [counter,setCounter] =useState(100);
+	const templateParams = {
+		to_name: 'Khouloud',
+		from_name: 'Watt',
+		message_html: 'hello khouloud'
+	  }; 
+
+	const increaseConsumption =() =>{
+		setCounter(counter + 100);
+		if(counter >=500)
+			{
+			alert('email.sent');
+			emailjs.send("service_8vokf4k","template_jxzw1el",templateParams,'nxfOOCBx-p2TaHE96')
+			.then(function(response) {
+      			console.log('SUCCESS!', response.status, response.text);
+				
+    		}, function(error) {
+      			console.log('FAILED...', error);})
+			}
+
+	};
+
+	
+
 return (
 	
 	<>
@@ -30,7 +57,19 @@ return (
 		<div style={{marginLeft:400,marginTop:120 ,width:500}}>
 		<PieChart />
 		</div>
+		<h1 style={{marginLeft:500,marginTop:150 ,fontFamily:'fantasy',fontWeight:'bold'}}>Votre compteur à l'instant.</h1>
+		<div style={{marginLeft:500,marginTop:120 ,width:500}}>
+		<img src={compteur}
+            className="compteur-image"
+			style={{width:400,zIndex:1}}/>
+			<button className='btn-compteur' onClick={increaseConsumption}></button>
+			<div className='val-compteur'>{counter}</div>
+			{}
+			
+		</div>
 		
+
+
 	</>
 );
 };

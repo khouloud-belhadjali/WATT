@@ -48,7 +48,7 @@ function Register() {
                     <div className='remember'>
                         <label for=''><input type='checkbox'/>In agree to the terms and condition </label>
                     </div>
-                    <button type='submit' onClick={register}>Sign Up</button>
+                    <button className='btn-sign' type='submit' onClick={register}>Sign Up</button>
                     <div className='signUp-link'>
                         <p>Already have an account?<NavLink to='/login'className='signInBtn-link'>Sign In</NavLink></p>
                     </div>
