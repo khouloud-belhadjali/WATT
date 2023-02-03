@@ -77,7 +77,7 @@ function Navbar() {
         <h2 className="header--title">Watt?</h2>
         <NavLink to='/login' className="header--log"><img src={myGif2}
             
-			style={{width:40,}}/> Login/Register</NavLink>
+			style={{width:40}}/> Login/Register</NavLink>
             <ul class="navbar-nav ml-auto">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
                 <li class="nav-item active">

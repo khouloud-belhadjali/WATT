@@ -5,10 +5,10 @@ import { Chart as ChartJS } from "chart.js/auto";
 function LineChart(){
     const [userData,setUserData] = useState(
 		{
-			labels: UserData.map((data)=> data.month),
+			labels: UserData.map((data)=> data.year),
 			datasets: [
 				{
-					label:"Votre consommation par mois",
+					label:"Votre consommation par année",
 					data: UserData.map((data)=> data.UserGain),
 					backgroundColor: [
 						'rgba(255, 99, 132, 0.4)',  // Bar 1

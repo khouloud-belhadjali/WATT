@@ -5,10 +5,10 @@ import { Chart as ChartJS } from "chart.js/auto";
 function BarChart(){
     const [userData,setUserData] = useState(
 		{
-			labels: UserData.map((data)=> data.year),
+			labels: UserData.map((data)=> data.month),
 			datasets: [
 				{
-					label:"Votre consommation par annèe",
+					label:"Votre consommation mensulle",
 					data: UserData.map((data)=> data.UserGain),
 					backgroundColor: [
 						'rgba(255, 99, 132, 0.4)',  // Bar 1
